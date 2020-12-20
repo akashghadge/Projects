@@ -1,0 +1,56 @@
+.base {
+    background-color: white;
+    height: 100vw;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#playArea {
+    position: relative;
+    background-color: white;
+    height: 50vw;
+    width: 50vw;
+    left: 20vw;
+    top: 7vw;
+    border: solid 1vw black;
+}
+
+#sneak {
+    position: relative;
+    background-color: black;
+    height: 1vw;
+    width: 1vw;
+    left: 20vw;
+    top: 5vw;
+}
+
+#scoreBoard {
+    position: relative;
+    height: 5vw;
+    width: 50vw;
+    left: 33vw;
+    top: 3vw;
+    background-color: white;
+}
+
+#food {
+    position: relative;
+    background-color: red;
+    height: 1vw;
+    width: 1vw;
+    left: 15vw;
+    top: 5vw;
+}
+
+#StratGame {
+    position: relative;
+    height: 5vw;
+    width: 50vw;
+    left: 20vw;
+    top: 10vw;
+    background-color: white;
+}
+
+.dislayHide {
+    display: block;
+}

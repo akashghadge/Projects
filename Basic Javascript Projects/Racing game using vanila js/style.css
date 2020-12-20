@@ -1,0 +1,71 @@
+#playArea {
+    position: absolute;
+    width: 750px;
+    height: 720px;
+    background-color: black;
+    left: 300px;
+    border: solid 10px black;
+    border-radius: 10px;
+    /* top: 200px; */
+}
+
+.track {
+    display: inline-block;
+    position: absolute;
+    /* margin-left: 200px; */
+    width: 10px;
+    height: 720px;
+    background-color: white;
+    left: 150px;
+}
+
+#player {
+    position: absolute;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    left: 20px;
+    background-color: blueviolet;
+    top: 600px;
+}
+
+#obstacale {
+    display: inline-block;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    left: 20px;
+    animation: moveObs linear 0.9s infinite;
+}
+
+#scoreDisplay {
+    position: absolute;
+    height: 150px;
+    width: 250px;
+    /* display: inline; */
+    background-color: wheat;
+    text-align: center;
+    padding: 40px;
+    color: teal;
+    border-radius: 5px;
+    border: black solid 5px;
+}
+
+@keyframes moveObs {
+
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 650px;
+    }
+}
+#start{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 100px;
+    background-color: white;
+}

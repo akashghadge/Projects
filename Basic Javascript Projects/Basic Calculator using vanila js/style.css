@@ -1,0 +1,103 @@
+#calculatorBody {
+    position: absolute;
+    height: 600px;
+    width: 500px;
+    background-color: silver;
+    top: 50px;
+    left: 500px;
+    border: solid black 3px;
+    border-radius: 20px;
+}
+
+.displayNormal {
+    position: relative;
+    height: 60px;
+    width: 450px;
+    background-color: rgb(0, 120, 0);
+    top: 50px;
+    left: 25px;
+    border: solid black 3px;
+    border-radius: 10px;
+    font-size: 50px;
+}
+
+.displayExceed {
+    position: relative;
+    height: 60px;
+    width: 450px;
+    background-color: rgb(0, 120, 0);
+    top: 50px;
+    left: 25px;
+    border: solid black 3px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#calculatorButtons {
+    position: relative;
+    width: 450px;
+    height: 400px;
+    /* border: solid black 3px;
+    border-radius: 10px; */
+    top: 100px;
+    left: 30px;
+    /* padding: 10px; */
+    align-items: center;
+}
+
+.buttonMain {
+    background-color: darkblue;
+    color: rgb(190, 106, 10);
+    width: 100px;
+    height: 70px;
+    border: solid darkblue;
+    border-radius: 8px;
+    font-size: 25px;
+    margin: 3px;
+    margin-top: 3px;
+}
+
+.buttonOperation {
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 70px;
+    border: solid rgb(57, 64, 71);
+    border-radius: 8px;
+    font-size: 25px;
+    margin: 3px;
+    margin-top: 3px;
+
+}
+
+.buttonNum {
+    background-color: rgb(57, 64, 71);
+    color: rgb(190, 106, 10);
+    width: 100px;
+    height: 70px;
+    border: solid rgb(57, 64, 71);
+    border-radius: 8px;
+    font-size: 25px;
+    margin: 3px;
+    margin-top: 3px;
+}
+
+.buttonPressed {
+    background-color: blue;
+    font-size: 30px;
+}
+
+#akashLogo {
+    position: relative;
+    height: 30px;
+    width: 100px;
+    background-color: brown;
+    border: solid rgb(182, 113, 113)(199, 146, 146) 3px;
+    border-radius: 5px;
+    top: 40px;
+    left: 380px;
+    text-align: center;
+    font-size: 25px;
+    color: wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

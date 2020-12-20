@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Man API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <main>
+        <div class="container border border-dark bg-primary text-center">
+            <br>
+            <div class="btn-group btn-group-toggle align-content-center" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="getButton" checked> GET
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="postButton"> POST
+                </label>
+            </div>
+            <br><br>
+        </div>
+        <br><br>
+        <div class="container " id="GetElement">
+            <label class="my-2" for="url">URL : </label>
+            <input type="url" placeholder="Enter the url" id="urlGet">
+            <button class="btn btn-outline-primary mx-2 btn-sm" id="buttonSubmitGet">Get Request</button>
+            <div id="displayGetRequest">
+            </div>
+        </div>
+
+        <div class="container hide align-content-center" id="PostElement">
+            <label class="my-2" for="url">URL : </label>
+            <input type="url" placeholder="Enter the url" id="urlPost"><br>
+            <label class="my-2" for="url">DATA : </label><br>
+            <textarea class="marginPost" name="data" id="dataPostReq" cols="30" rows="10"
+                placeholder="Enter the data in json formate for the request"></textarea>
+            <br>
+            <button class="btn btn-outline-primary mx-2 btn-sm my-3 marginPost" id="buttonSubmitPost">Post
+                Request</button>
+        </div>
+    </main>
+    <script src="../bootstrap/jquery-3.5.1.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

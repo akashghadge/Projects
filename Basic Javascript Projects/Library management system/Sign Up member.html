@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Library Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01"
+            aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Sign In</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="Sign In admin.html">Admin</a>
+                        <a class="dropdown-item" href="Sign In member.html">Member</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Sign Up.html">Sign Up</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Other</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">About</a>
+                        <a class="dropdown-item" href="#">Terms and Conditions</a>
+                        <!-- <a class="dropdown-item" href="#"></a> -->
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+    <div id="temp" class="temp">;
+
+    </div>
+
+    <div class="text-centet container-sm">
+
+        <form class="form-signin" id="formSignInAdmin">
+            <h1 class="h3 mb-3 font-weight-normal " id="tagLineSignIn">Admin Sign In</h1>
+            <label for="inputEmail" class="sr-only">Admin Name</label>
+            <input type="name" id="adminName" class="form-control" placeholder="User Name" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="adminPassword" class="form-control" placeholder="Password" required>
+            <div class="checkbox mb-3">
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" id="loginAdmin" value="submit">Sign
+                in</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" id="loginMember" value="submit" hidden>Sign
+                in</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+        </form>
+    </div>
+
+    <script src="../bootstrap/jquery-3.5.1.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <!-- <script src="Sign In.js"></script> -->
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.show {
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.marginPost{
+    margin-left: 5vw;
+}

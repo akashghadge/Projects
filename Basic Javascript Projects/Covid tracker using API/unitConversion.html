@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Covid Tracker</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded navbar-collapse fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10"
+            aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="covidTracker.html">Covid Tracker</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="unitConversion.html">Unit Conversion</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown10">
+                        <a class="dropdown-item nav-link" href="about.html">About</a>
+                        <a class="dropdown-item nav-link" href="conatact.html">Contact us</a>
+                        <!-- <a class="dropdown-item nav-link" href="privacyPolicy.html">Privacy Policy</a> -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="inner cover container text-center">
+        <h1 class="cover-heading text-center">Live Unit Conversion</h1>
+        <hr>
+        <p class="lead">Live Unit Conversion. <br>Which can give you updates of the live currenacy across global</p>
+        <hr>
+    </div>
+
+    <div class="container-sm">
+        <h5 class="text-center text-secondary">This value is given with respect to the 1 US dollar</h5>
+        <table class="table table-dark table-striped container-sm">
+            <thead>
+                <tr>
+                    <th scope="col">Sr No.</th>
+                    <th scope="col">Currenacy Name</th>
+                    <th scope="col">Currenacy Value</th>
+                </tr>
+            </thead>
+            <tbody id="unitTable" class="table-light text-black-50 container-sm">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+    <script src="jquery-3.5.1.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+
+</html>

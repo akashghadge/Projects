@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Option</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Library Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01"
+            aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="index.html" id="signOut">Sign Out</a>
+                    <!-- <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="Sign In admin.html">Admin</a>
+                        <a class="dropdown-item" href="Sign In member.html">Member</a>
+                    </div> -->
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Sign Up</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="Sign Up admin.html">Admin</a>
+                        <a class="dropdown-item" href="Sign Up member.html">Member</a>
+                    </div>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Other</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">About</a>
+                        <a class="dropdown-item" href="#">Terms and Conditions</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+    <div class="temp" id="temp">
+
+    </div>
+    <div class="userInfo" id="userInfo">
+    </div>
+    <form class="form-signin text-center">
+        <h1 class="h3 mb-3 font-weight-normal">Add a New Book</h1>
+        <input type="text" id="inputBookName" class="form-control" placeholder="Book Name" required>
+        <input type="text" id="inputBookAuthor" class="form-control" placeholder="Author" required>
+        <div class="checkbox mb-3">
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="addBook">Add Book</button>
+        <br><br><br>
+        <hr>
+        <table class="table table-dark container-sm" id="bookListMain">
+            <thead>
+                <tr>
+                    <th scope="col">Sr No.</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody id="bookList">
+
+            </tbody>
+        </table>
+        <script src="../bootstrap/jquery-3.5.1.js"></script>
+        <script src="../bootstrap/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+        <!-- <script src="admin options.js"></script> -->
+        <!-- <script src="Sign In.js"></script> -->
+        <!-- <script src="memberOption.js"></script> -->
+</body>
+
+</html>
