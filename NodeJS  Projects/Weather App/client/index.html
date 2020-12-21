@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .displayMain {
+            position: absolute;
+            width: 50%;
+            height: 60%;
+            left: 25%;
+            top: 20%;
+            min-width: 400px;
+            min-height: 450px;
+            background-image: url("79072773-early-morning-background-with-nature-vector.jpg");
+            background-size: contain;
+            /* background-repeat: no-repeat; */
+            background-color: black;
+        }
+
+        #headingMain {
+            position: relative;
+            color: rgb(135, 80, 238);
+            left: 10%;
+            font-size: 50px;
+        }
+
+        #stats {
+            font-family: cursive;
+            color: rgb(25, 0, 255);
+            position: relative;
+            left: 5%;
+
+
+        }
+
+        h4 {
+            font-size: 21px;
+            background: -webkit-linear-gradient(rgb(12, 241, 4), rgb(99, 180, 176));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h5 {
+            font-size: 17px;
+            background: -webkit-linear-gradient(rgb(22, 153, 146), rgb(35, 45, 182));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="displayMain">
+            <h1 id="headingMain">Weather App</h1>
+            <div id="stats">
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let url = "http://api.openweathermap.org/data/2.5/weather?q=Pune&appid=a4d9e0382ddd657f40dddfaa83fe1ed8";
+        fetch(url).then((response) => {
+            return response.text();
+        }).then((data) => {
+            let parseObj = JSON.parse(data);
+            console.log(parseObj);
+            let stats = document.getElementById("stats");
+            let str = "";
+            stats.innerHTML = `
+            <h4>City : ${parseObj.name} ,Maharashatra</h4>
+            <h4>Weather : ${parseObj.weather[0].main}(${parseObj.weather[0].description})</h4>
+            <h5>Temprature : ${(parseObj.main.temp/10).toFixed(2)}&deg;C</h5>
+            <h5>Temp Max : ${(parseObj.main.temp_max / 10).toFixed(2)}&deg;C Temp Min : ${(parseObj.main.temp_min / 10).toFixed(2)}&deg;C</h5>
+            <h5>Pressure : ${parseObj.main.pressure} p  Humidity : ${parseObj.main.humidity}</h5>
+             `
+        })
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- {"coord":{"lon":73.86,"lat":18.52},"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03n"}],"base":"stations","main":{"temp":298.95,"feels_like":299.3,"temp_min":298.95,"temp_max":298.95,"pressure":1012,"humidity":50,"sea_level":1012,"grnd_level":950},"visibility":10000,"wind":{"speed":1.59,"deg":174},"clouds":{"all":47},"dt":1606137438,"sys":{"country":"IN","sunrise":1606094163,"sunset":1606134380},"timezone":19800,"id":1259229,"name":"Pune","cod":200} -->
+
+
+<!-- http://api.openweathermap.org/data/2.5/weather?q=Pune&appid=a4d9e0382ddd657f40dddfaa83fe1ed8 -->
