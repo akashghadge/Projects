@@ -1,8 +1,8 @@
 #heading {
   font-family: cursive;
   position: relative;
-  margin-top: 10%;
-  font-size: 30px;
+  margin-top: 12%;
+  font-size: 33px;
   color: #3d54d3;
   text-align: center;
   text-decoration: underline;
@@ -12,7 +12,7 @@
     color: #0400fd; }
 
 #mainDis {
-  display: flex;
+  display: inline-flex;
   position: relative;
   flex-direction: column;
   margin-top: 5%;
@@ -32,24 +32,25 @@
   border-right: solid 10px #05d9ff; }
 
 #inputBox {
-  margin-left: 7%;
+  margin-left: 15%;
   position: relative;
-  height: 30px;
+  width: 250px;
+  height: 40px;
   color: #1241a7;
   background-color: lightblue;
-  border-bottom: lightcyan solid 5px;
+  border-bottom: deepskyblue solid 5px;
   font-family: cursive;
   outline: none;
-  font-size: 20px; }
+  font-size: 22px; }
 
 #addTaskButton {
   position: relative;
-  margin-left: 10px;
+  margin-left: 15px;
   width: 75px;
-  height: 38px;
+  height: 42px;
   border-radius: 20px;
   font-family: 'Times New Roman', Times, serif;
-  color: #00ff40;
+  color: #0400ff;
   background-color: #4a74ac;
   box-shadow: mediumspringgreen; }
   #addTaskButton:hover {
@@ -59,28 +60,27 @@
     border: none; }
 
 .notes {
-  margin-left: 10%;
   position: relative;
+  margin-left: 10%;
   margin-top: 5%;
   display: flex;
   flex-direction: row;
   align-items: left; }
 
-.buttonDelete {
-  font-family: 'Times New Roman', Times, serif;
-  margin-right: 10px;
-  border-radius: 50%;
-  color: default;
-  font-size: 10px;
-  width: 40px;
-  height: 40px;
-  outline: none; }
-  .buttonDelete:hover {
-    background-color: red;
-    box-shadow: currentColor; }
+.ButtonDelete {
+  color: black; }
+  .ButtonDelete:hover {
+    color: red;
+    font-size: 40px; }
+
+.ButtonAdd {
+  color: black; }
+  .ButtonAdd:hover {
+    color: lime;
+    font-size: 40px; }
 
 .noteText {
   font-family: cursive;
   text-transform: capitalize;
-  text-overflow: ellipsis;
-  color: #084dbd; }
+  color: #084dbd;
+  font-size: larger; }

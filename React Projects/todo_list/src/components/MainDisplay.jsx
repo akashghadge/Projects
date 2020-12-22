@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PrevTask from "./PrevTask";
-
+import Button from "@material-ui/core/Button/Button"
+import Add from "@material-ui/icons/Add"
 function MainDisplay() {
     const [currentDataInuputText, SetCurrentInputText] = useState("");
     function inputField(event) {
@@ -20,7 +21,8 @@ function MainDisplay() {
     }
     // console.log(DataInputState);
     function deleteNote(event) {
-        const currIndex = event.target.name;
+        // console.log(event.currentTarget.id)
+        const currIndex = event.currentTarget.id;
         SetInputSet((prevTasks) => {
             return prevTasks.filter((arrElem, index) => {
                 return parseInt(currIndex) !== index;
@@ -29,11 +31,12 @@ function MainDisplay() {
     }
     return (
         <>
+
             <div id="mainDis">
                 <h4 id="heading">TO DO List</h4>
                 <div>
                     <input id="inputBox" type="text" name="inputText" onChange={inputField} value={currentDataInuputText} ></input>
-                    <button id="addTaskButton" onClick={AddTask}>Add</button>
+                    <Button id="addTaskButton" onClick={AddTask}><Add /></Button>
                 </div>
                 {DataInputState.map((value, index) => {
                     {/* console.log(value, index) */ }
