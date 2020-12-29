@@ -46,7 +46,7 @@ const Create = () => {
     console.log(finalInputValue);
     return (
         <>
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="position-relative overflow-hidden text-center bg-light createNotes" >
                 <div class="col-md-5 p-lg-5 mx-auto my-5">
                     <h1 class="display-4 font-weight-normal" id="addNoteHead">Add Note</h1>
                     <input type="text" placeholder="type a title" id="titleInput" name="title" onChange={inputChange} value={inputValue.title}></input>

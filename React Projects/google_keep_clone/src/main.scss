@@ -1,14 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    min-width: 500px;
-    min-height: max-content;
-}
+// * {
+//     margin: 0;
+//     padding: 0;
+//     min-width: 500px;
+//     min-height: max-content;
+// }
+
+
+$mainColor:rgb(255, 238, 0);
 
 #heading {
     position: relative;
+    font-family: cursive;
+    padding-top: 1%;
     display: block;
-    background-color: purple;
+    background-color: $mainColor;
     text-align: center;
     align-content: center;
     font-size: 50px;
@@ -30,12 +35,16 @@
     text-align: center;
 }
 
+.createNotes {
+    display: block;
+}
+
 #addButton {
     border-radius: 10%;
     height: 50px;
     width: 100px;
     outline: none;
-    background-color: purple;
+    background-color: $mainColor;
     color: white;
 
     &:hover {
@@ -44,7 +53,7 @@
 }
 
 #titleInput {
-    color: purple;
+    color: $mainColor;
     font-size: 25px;
     font-family: cursive;
     text-align: center;
@@ -54,7 +63,7 @@
 }
 
 #textInput {
-    color: purple;
+    color: $mainColor;
     font-size: 25px;
     padding: 1%;
     margin-bottom: 8%;
@@ -65,7 +74,7 @@
 }
 
 #addNoteHead {
-    color: purple;
+    color: $mainColor;
     font-size: 50px;
     font-family: cursive;
 }
@@ -88,6 +97,6 @@
     text-align: center;
     align-items: center;
     text-transform: capitalize;
-    color: purple;
+    color: $mainColor;
     font-family: cursive;
 }
