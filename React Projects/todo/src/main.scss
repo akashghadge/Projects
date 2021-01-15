@@ -1,0 +1,119 @@
+$mainBorderColor : rgb(5, 217, 255);
+
+#heading {
+    font-family: cursive;
+    position: relative;
+    margin-top: 12%;
+    font-size: 33px;
+    color: rgb(61, 84, 211);
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: below;
+    text-underline-offset: 5px;
+
+    &:hover {
+        color: rgb(4, 0, 253);
+    }
+}
+
+#mainDis {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    // align-items: center;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 10%;
+    padding-bottom: 50px;
+    padding-left: 2%;
+    min-width: 500px;
+    max-width: 500px;
+
+    min-height: 500px;
+    height: max-content;
+    width: max-content+10px;
+
+    background-color: lightskyblue;
+    // align-items: center;
+    text-align: left;
+    border-radius: 10%;
+    border-bottom: solid 10px $mainBorderColor;
+    border-right: solid 10px $mainBorderColor;
+
+}
+
+#inputBox {
+    margin-left: 15%;
+    position: relative;
+    width: 250px;
+    height: 40px;
+    border: none;
+    color: rgb(18, 65, 167);
+    background-color: lightblue;
+    border-bottom: deepskyblue solid 5px;
+    font-family: cursive;
+    outline: none;
+    font-size: 22px;
+
+}
+
+#addTaskButton {
+    position: relative;
+    margin-left: 15px;
+    width: 75px;
+    height: 42px;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(4, 0, 255);
+    background-color: rgb(74, 116, 172);
+    // outline: auto;
+    // outline-width: 20px;
+    // outline-color: lightskyblue;
+    // border: none;
+    box-shadow: mediumspringgreen;
+
+    &:hover {
+        background-color: lime;
+        color: white;
+        outline: none;
+        border: none;
+    }
+}
+
+.notes {
+    position: relative;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    // display:grid;
+
+}
+
+
+
+.ButtonDelete {
+    color: black;
+
+    &:hover {
+        color: red;
+        font-size: 40px;
+    }
+}
+
+.ButtonAdd {
+    color: black;
+
+    &:hover {
+        color: lime;
+        font-size: 40px;
+    }
+}
+
+.noteText {
+    font-family: cursive;
+    text-transform: capitalize;
+    color: rgb(8, 77, 189);
+    font-size: larger;
+}
