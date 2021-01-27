@@ -1,5 +1,5 @@
 // console.log("project 3");
-if (location.href == "http://127.0.0.1:5500/covidTracker.html") {
+if (location.href == "https://akashghadge.github.io/Covid-Tracker-Using-Fetch-API/covidTracker.html") {
     console.log("we are on covid page");
     let source = "https://api.apify.com/v2/key-value-stores/tVaYRsPHLjNdNBu7S/records/LATEST?disableRedirect=true"
     console.log("helllo");
@@ -73,6 +73,8 @@ if (location.href == "http://127.0.0.1:5500/covidTracker.html") {
     const xhr = new XMLHttpRequest();
     xhr.open("GET", source, true);
     xhr.onprogress = function () {
+        let covidDetailsShow = document.getElementById("covidDetailsShow")
+        covidDetailsShow.innerHTML = `<h3>Loading ...</h3>`
         loadingEffect();
     }
     xhr.onload = function () {
@@ -92,7 +94,7 @@ if (location.href == "http://127.0.0.1:5500/covidTracker.html") {
 
 }
 
-if (location.href == "/unitConversion.html") {
+if (location.href == "https://akashghadge.github.io/Covid-Tracker-Using-Fetch-API/unitConversion.html") {
 
     function displayCurr(obj) {
         console.log(obj);
@@ -107,7 +109,7 @@ if (location.href == "/unitConversion.html") {
         keysObj.forEach(function (element, index) {
             str += `
             <tr>
-                <th scope="row">${index+1}</th>
+                <th scope="row">${index + 1}</th>
                 <td>${keysObj[index]}</td>
                 <td>${valuesObj[index]}</td>
             </tr>
@@ -138,9 +140,9 @@ if (location.href == "/unitConversion.html") {
 
 }
 
-if (location.href == "/index.html") {
+if (location.href == "https://akashghadge.github.io/Covid-Tracker-Using-Fetch-API/index.html") {
     // console.log("helloe");
-
+    console.log("on home page");
     function displayQuotes(objQuote) {
         let quoteDiv = document.getElementById("quotes");
         let str = "";
