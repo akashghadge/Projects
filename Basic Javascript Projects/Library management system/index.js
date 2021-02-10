@@ -4,6 +4,8 @@ before using this website please chagne the location.href conditional condions a
 when you use backend for your project it will became easy to serve pages but here 
 i take help of the current location to route web pages 
 :)
+my base url for hosting the github page
+// https://akashghadge.github.io/library-management-Using-JS/
 */
 
 
@@ -29,13 +31,13 @@ localStorage.setItem("memberDetails", JSON.stringify(userMember));
 // userAdmin = JSON.parse(userAdmin);
 localStorage.setItem("adminDetails", JSON.stringify(userAdmin));
 
-if (location.href == "http://127.0.0.1:5501/tutorials/projects/project%202%20tut33/adminOptions.html") {
+if (location.href == "https://akashghadge.github.io/library-management-Using-JS/adminOptions.html") {
     showBookList();
 }
-if (location.href == "http://127.0.0.1:5501/tutorials/projects/project%202%20tut33/memberOptions.html") {
+if (location.href == "https://akashghadge.github.io/library-management-Using-JS/memberOptions.html") {
     showBookListMember();
 }
-if (location.href == "http://127.0.0.1:5501/tutorials/projects/project%202%20tut33/index.html") {
+if (location.href == "https://akashghadge.github.io/library-management-Using-JS/") {
     showBookListHome();
 }
 
@@ -414,14 +416,14 @@ function bookIssuedNotification(element, text) {
 
 
 createUser("akash", "ghadge", 1);
-createUser("pranali", "lawand", 0);
+// createUser("pranali", "lawand", 0);
 createUser("ash", "ghadge", 0);
 
 
 
 
 
-if (location.href == "http://127.0.0.1:5501/tutorials/projects/project%202%20tut33/Sign%20In%20admin.html") {
+if (location.href == "https://akashghadge.github.io/library-management-Using-JS/Sign%20In%20admin.html") {
     let loginAdminButton = document.getElementById("loginAdmin");
     loginAdminButton.addEventListener("click", function (event) {
         // console.log("hi");
@@ -438,7 +440,7 @@ if (location.href == "http://127.0.0.1:5501/tutorials/projects/project%202%20tut
 }
 
 // login member fucntion
-if (location.href == "http://127.0.0.1:5501/tutorials/projects/project%202%20tut33/Sign%20In%20member.html") {
+if (location.href == "https://akashghadge.github.io/library-management-Using-JS/Sign%20In%20member.html") {
     let loginMemberButton = document.getElementById("loginMember");
     loginMemberButton.addEventListener("click", function (event) {
         event.preventDefault();
@@ -458,7 +460,7 @@ if (location.href == "http://127.0.0.1:5501/tutorials/projects/project%202%20tut
 }
 
 //ading the new book by admin user
-if (location.href == "http://127.0.0.1:5501/tutorials/projects/project%202%20tut33/adminOptions.html") {
+if (location.href == "https://akashghadge.github.io/library-management-Using-JS/adminOptions.html") {
     let addBook = document.querySelector("#addBook");
     addBook.addEventListener("click", function (element) {
         element.preventDefault();
@@ -488,7 +490,7 @@ if (location.href == "http://127.0.0.1:5501/tutorials/projects/project%202%20tut
     })
 }
 
-if (location.href == "http://127.0.0.1:5501/tutorials/projects/project%202%20tut33/adminOptions.html") {
+if (location.href == "https://akashghadge.github.io/library-management-Using-JS/adminOptions.html") {
 
     let userInfo = document.querySelector(".userInfo")
     let currentUser = localStorage.getItem("currentUser");
@@ -507,7 +509,7 @@ if (location.href == "http://127.0.0.1:5501/tutorials/projects/project%202%20tut
 
 }
 
-if (location.href == "http://127.0.0.1:5501/tutorials/projects/project%202%20tut33/memberOptions.html") {
+if (location.href == "https://akashghadge.github.io/library-management-Using-JS/memberOptions.html") {
 
     let userInfo = document.querySelector(".userInfo")
     let currentUser = localStorage.getItem("currentUser");
