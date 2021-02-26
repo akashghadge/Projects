@@ -1,0 +1,17 @@
+{
+  "name": "image-reading",
+  "version": "1.0.0",
+  "description": "here we are gone learn how to work with images reading",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "akash ghadge",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.7"
+  }
+}
