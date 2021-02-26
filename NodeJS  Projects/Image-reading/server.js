@@ -21,6 +21,7 @@ const errHandler = require("./routes/errorHandle");
 app.use(errHandler);
 // server is creation
 // server listening 
+// hello
 app.listen(port, () => {
     console.log("server is running succefully at port :", port);
 }) 
