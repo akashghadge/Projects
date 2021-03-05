@@ -8,6 +8,15 @@ const path = require("path");
 // middlewares
 app.use(express.json())
 
+// connecting with db
+const mongoose = require("mongoose");
+mongoose.connect("mongodb://localhost/image-reading", {
+    useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
+}).then((data) => {
+    console.log("db is connected");
+}).catch((err) => {
+    console.log(err);
+})
 // routes for multer
 const upload = require("./routes/upload.route");
 app.use("/api/", upload);
