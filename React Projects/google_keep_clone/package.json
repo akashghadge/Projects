@@ -1,6 +1,6 @@
 {
   "name": "google_keep_clone",
-  "homepage": "https://akashghadge.github.io/google-keep-clone",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
