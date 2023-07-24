@@ -14,6 +14,9 @@ app.engine('hbs', hbs.engine({
     extname: 'hbs',
 }))
 
+// models
+const Detail = require("./model/Detail")
+
 
 // Route to display device details using Handlebars template
 app.get('/', (req, res) => {
@@ -33,10 +36,23 @@ app.post("/api/device-data", (req, res) => {
         height: req.body.screenHeight,
         pixelRatio: req.body.devicePixelRatio,
         isTouch: req.body.isTouchSupported,
-        ip: req.headers['x-forwarded-for'] || req.connection.remoteAddress
+        ip: req.headers['x-forwarded-for'] || req.socket.remoteAddress
     }
-    console.log(details);
+    const newDetails = new Detail(details);
+    newDetails.save()
+        .then((data) => {
+            console.log(data);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
 })
+
+app.get('/api/device-data/all', async (req, res) => {
+    let data = await Detail.find({});
+    res.json(data);
+})
+
 // Start the server
 const port = 5000;
 app.listen(port, () => console.log(`Server running on http://localhost:${port}/`));
