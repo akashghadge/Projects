@@ -1,0 +1,40 @@
+<!-- views/device-details.hbs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Device Details</title>
+</head>
+
+<body>
+    <h1>hello</h1>
+</body>
+<script>
+    const sendDeviceDetails = () => {
+        const deviceDetails = {
+            screenWidth: window.screen.width,
+            screenHeight: window.screen.height,
+            devicePixelRatio: window.devicePixelRatio,
+            isTouchSupported: "ontouchstart" in window || navigator.maxTouchPoints
+        };
+        fetch('/api/device-data', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(deviceDetails)
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('POST Request Response:', data);
+            })
+            .catch(error => {
+                console.error('Error making POST request:', error);
+            });
+    };
+    window.addEventListener('load', () => {
+        sendDeviceDetails();
+    });
+</script>
+
+</html>
